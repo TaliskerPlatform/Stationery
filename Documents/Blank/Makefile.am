@@ -16,7 +16,7 @@ stationerydir = $(prefix)/Stationery/Basic
 
 noinst_DATA = Blank.zip
 
-CLEANFILES = $(doc_DATA) mimetype
+CLEANFILES = $(noinst_DATA) mimetype
 
 MIMETYPE = application/vnd.oasis.opendocument.text-template
 
