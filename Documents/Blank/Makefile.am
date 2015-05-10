@@ -33,4 +33,4 @@ $(noinst_DATA): $(dist_noinst_DATA)
 # Use a hook to install because make has problems with spaces in filenames
 install-data-hook:
 	$(MKDIR_P) "$(DESTDIR)$(stationerydir)"
-	$(INSTALL) -m 644 $(noinst_DATA) "$(DESTDIR)$(stationerydir)/Blank document.ott"
+	$(INSTALL_DATA) $(noinst_DATA) "$(DESTDIR)$(stationerydir)/Blank document.ott"
