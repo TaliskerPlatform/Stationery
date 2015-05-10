@@ -15,6 +15,7 @@ purposes, without asking permission.
 	<!-- Font definitions -->
 	<office:font-face-decls>
 		<style:font-face style:name="Roboto" svg:font-family="Roboto" style:font-family-generic="swiss" style:font-pitch="variable" />
+		<style:font-face style:name="Talisker Terminal" svg:font-family="'Talisker Terminal'" style:font-family-generic="modern" style:font-pitch="fixed" />
 	</office:font-face-decls>
 	
 	<office:styles>
@@ -196,7 +197,22 @@ purposes, without asking permission.
 			style:family="paragraph"
 			style:class="index"
 			style:parent-style-name="Standard">
-			<style:paragraph-properties text:number-lines="false" text:line-number="0"/>
+			<style:paragraph-properties text:number-lines="false" text:line-number="0" />
+		</style:style>
+		
+		<!-- Teletype -->
+		<style:style
+			style:name="Teletype"
+			style:display-name="Teletype"
+			style:family="text">
+			<style:text-properties style:font-name="Talisker Terminal" fo:font-size="90%" />
+		</style:style>
+
+		<style:style
+			style:name="SourceText"
+			style:display-name="Source Text"
+			style:family="text">
+			<style:text-properties style:font-name="Talisker Terminal" fo:font-size="90%" />
 		</style:style>
 
 		<!-- Outline styles -->
